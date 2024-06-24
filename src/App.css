@@ -1,0 +1,226 @@
+/* Basic styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; /* Inherit box-sizing from html/body */
+}
+
+header, footer {
+  background-color: #282c34;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  flex: 1;
+  overflow-x: hidden; /* Prevent horizontal scrolling within main */
+}
+
+/* Navigation styles */
+.navigation {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #282c34;
+}
+
+.navigation a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navigation a:hover {
+  background-color: #444;
+}
+
+.navigation a.active {
+  border-bottom: 2px solid #61dafb;
+  background-color: #333;
+}
+
+/* Footer styles */
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #282c34;
+  color: #fff;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling within footer */
+}
+
+.footer a, footer a:active {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.footer a:hover {
+  background-color: #444;
+}
+
+/* Section styles */
+section {
+  padding: 2rem;
+}
+
+/* Developer image styles */
+.developer-image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.developer-image {
+  border-radius: 50%;
+  width: 150px; /* Adjust the size as needed */
+  height: 150px; /* Adjust the size as needed */
+  object-fit: cover; /* Ensures the image covers the container */
+}
+
+.about-me-content {
+  text-align: center;
+  margin-left: 33%;
+  margin-right: 33%;
+}
+
+/* Form styles */
+form input, form textarea {
+  display: block;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Portfolio styles */
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.project {
+  flex: 1 1 calc(33.333% - 2rem);
+  box-sizing: border-box;
+  text-align: center;
+  padding: 1rem;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.project h3 {
+  margin-top: 0.5rem;
+}
+
+.project p {
+  margin-top: 0.5rem;
+}
+
+/* Contact form styles */
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form div {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form input, 
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  padding: 0.75rem 1.5rem;
+  background-color: #282c34;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #444;
+}
+
+/* Resume styles */
+.resume-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resume-content {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.resume-content a {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.resume-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.resume-content ul li {
+  margin: 0.5rem 0;
+}
