@@ -3,7 +3,7 @@
   ## Description
   React portfolio to demonstrate concepts learned and projects completed throughout the full-stack bootcamp.
   ## Deployed Application URL
-  tbd
+  [App deployed via Netlify](https://sage-chimera-b166d6.netlify.app/)
   ## Screenshot
   ![alt-text](./src/assets/images/screenshot.jpeg)
   ## Table of Contents
